@@ -4,22 +4,32 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  const employee = [];
+  const Employees = [];
   let addEmployee = true;
     while (addEmployee){
-      let addfirstName = prompt ("Enter employee's First Name");
-      let addlastName = prompt ("Enter employee's Last Name");
-      let addsalary = prompt ("Enter employee's Salary")
-          if (addsalary != isNaN)
-            alert ("not valid input, please input valid number")
+      const firstName = prompt ("Enter employee's First Name");
+      const lastName = prompt ("Enter employee's Last Name");
+      let salary = prompt ("Enter employee's Salary");
+      salary = isNaN(Number(salary)) ? 0 : Number(salary);
+      
+      Employees.push({
+        firstName: firstName,
+        lastName: lastName,
+        salary: salary,
+      });
+    
+      const continueAdding = confirm("Do you want to add another employee?");
+      addEmployee = continueAdding;
+    
+    }
+        return Employees;};
 
 
 
 
-        const continueAdding = confirm("Want to add another employee?")
-        addEmployee = continueAdding
-    } return employeeInput
-  };
+        // const continueAdding = confirm("Want to add another employee?")
+        // addEmployee = continueAdding
+    
 
       
 
