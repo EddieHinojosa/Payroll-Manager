@@ -22,21 +22,21 @@ const collectEmployees = function() {
       employeesArray.push(employee)
     
       const continueAdding = confirm("Do you want to add another employee?");
-      addEmployee = continueAdding;
-    
+      addEmployee = continueAdding;    
     }
         return employeesArray;
     }
 
 
 
-      
-
-    
-
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+let averageSalary
+
+
+
+
 }
 
 // Select a random employee
