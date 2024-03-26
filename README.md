@@ -10,5 +10,5 @@
     HTTPS https://github.com/EddieHinojosa/Payroll-Tracker.git
     SSH git@github.com:EddieHinojosa/Payroll-Tracker.git
 
-* Live webpage https://eddiehinojosa.github.io/Payroll-Tracker/
+* Deploy link https://eddiehinojosa.github.io/Payroll-Tracker/
 
